@@ -1,4 +1,4 @@
 node_modules
 dist
-.firebasesrc
+\.firebasesrc
 firebase.json
