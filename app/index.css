@@ -255,7 +255,7 @@ input[type='radio'] {
 
 .forecast-detail-exit {
 	font-size: 1.5em;
-	margin-top: 50px;
+	margin: 50px 0 20px;
 	color: #ea9023;
 	cursor: pointer;
 }
@@ -297,6 +297,7 @@ input[type='radio'] {
 	margin: 0 auto;
 	padding: 10px;
 	font-size: 28px;
+	height: calc(100vh - 100px);
 }
 
 .error-message {
@@ -314,11 +315,11 @@ input[type='radio'] {
 .footer {
 	position: absolute;
 	bottom: 0;
-	z-index: 9999;
 	width: 100vw;
+	height: 100px;
 	text-align: center;
 	margin: 0;
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	background-color: rgba(0, 0, 0, 1);
 	align-items: center;
@@ -640,6 +641,7 @@ input[type='radio'] {
 		background: rgba(234,144,35,0.6);
 	}
 	.detail-container {
+		display: inline-flex;
 		margin: 0 auto;
 		height: 100vh;
 		width: 100vw;
@@ -687,7 +689,7 @@ input[type='radio'] {
 	}
 	.row > a {
 		display: inline-block;
-		width: calc(35% - 10px);
+		width: calc(40% - 10px);
 		margin-right: 10px;
 	}
 	.unit-selectors-column {
@@ -706,11 +708,22 @@ input[type='radio'] {
 		width: 100vw;
 		border-radius: 0;
 		padding: 50px 0;
-		height: calc(100vh - 200px);
-		height: 600px;
+		height: 100vh;
 	}
 	.forecast-container {
 		border-radius: 0;
-		margin: 40px 0 100px;
+		margin: 40px 0 0;
+	}
+	.footer {
+		position: relative;
+		flex-direction: row;
+		height: 60px;
+	}
+	.footer p {
+		padding: 0 20px;
+	}
+	.error {
+		height: calc(100vh - 60px);
+		padding: 0 10px;
 	}
 }
