@@ -13,8 +13,7 @@ var config = {
 		rules: [
 			{test: /\.(js)$/, use: 'babel-loader'},
 			{test: /\.css$/, use: ['style-loader', 'css-loader']},
-			{test: /\.ico$|\.svg$/, use: 'file-loader?name=app/[name].[ext]'},
-			{test: /\.jp?g$/, use:'url-loader?name=app/[name].[ext]'}
+			{test: /\.ico$|\.svg$|\.jpe?g$/, use: 'file-loader?name=app/[name].[ext]'}
 		]
 	},
 	devServer: {
