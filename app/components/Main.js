@@ -21,7 +21,7 @@ class Main extends React.Component {
 
 	render() {
 		return(
-			<div>
+			<div className='app-container'>
 				<HeaderMain />
 				<div className='main-container'>
 					<h1 className='main-heading'>Enter City, State</h1>

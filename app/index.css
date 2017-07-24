@@ -56,6 +56,10 @@ ul {
 	min-height: 100vh;
 }
 
+.app-container {
+	min-height: 90vh;
+}
+
 .header {
 	display: flex;
 	flex-direction: row;
@@ -313,8 +317,6 @@ input[type='radio'] {
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
 	width: 100vw;
 	height: 100px;
 	text-align: center;
@@ -715,7 +717,6 @@ input[type='radio'] {
 		margin: 40px 0 0;
 	}
 	.footer {
-		position: relative;
 		flex-direction: row;
 		height: 60px;
 	}
